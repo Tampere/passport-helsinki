@@ -1,28 +1,28 @@
-# Passport-Helsinki
+# Passport-Tampere
 
-[Passport](http://passportjs.org/) strategy for authenticating with City of Helsinki SSO
+[Passport](http://passportjs.org/) strategy for authenticating with City of Tampere SSO
 using the OAuth 2.0 API.
 
-This module lets you authenticate using the City of Helsinki SSO API in your Node.js
-applications. By plugging into Passport, City of Helsinki authentication can be easily and
+This module lets you authenticate using the City of Tampere SSO API in your Node.js
+applications. By plugging into Passport, City of Tampere authentication can be easily and
 unobtrusively integrated into any application or framework that supports
 [Connect](http://www.senchalabs.org/connect/)-style middleware, including
 [Express](http://expressjs.com/).
 
 ## Install
 
-    $ npm install git+https://github.com/City-of-Helsinki/passport-helsinki.git
+    $ npm install git+https://github.com/Tampere/passport-tampere.git
 
 ## Usage
 
 #### Configure Strategy
 
-The Helsinki authentication strategy authenticates users using OAuth 2.0 tokens.
+The Tampere authentication strategy authenticates users using OAuth 2.0 tokens.
 The strategy requires a `verify` callback, which accepts
 these credentials and calls `done` providing a user, as well as `options`
 specifying a client ID, client secret, and callback URL.
 
-    passport.use(new HelsinkiStrategy({
+    passport.use(new TampereStrategy({
         clientID: OAUTH2_CLIENT_ID,
         clientSecret: OAUTH2_CLIENT_SECRET,
         callbackURL: "http://127.0.0.1:3000/auth/github/callback"
@@ -36,17 +36,17 @@ specifying a client ID, client secret, and callback URL.
 
 #### Authenticate Requests
 
-Use `passport.authenticate()`, specifying the `'helsinki'` strategy, to
+Use `passport.authenticate()`, specifying the `'tampere'` strategy, to
 authenticate requests.
 
 For example, as route middleware in an [Express](http://expressjs.com/)
 application:
 
-    app.get('/auth/helsinki',
-      passport.authenticate('helsinki'));
+    app.get('/auth/tampere',
+      passport.authenticate('tampere'));
 
-    app.get('/auth/helsinki/callback', 
-      passport.authenticate('helsinki', { failureRedirect: '/login' }),
+    app.get('/auth/tampere/callback',
+      passport.authenticate('tampere', { failureRedirect: '/login' }),
       function(req, res) {
         // Successful authentication, redirect home.
         res.redirect('/');

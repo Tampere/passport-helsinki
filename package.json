@@ -1,7 +1,7 @@
 {
-  "name": "passport-helsinki",
+  "name": "passport-tampere",
   "version": "0.1.0",
-  "description": "City of Helsinki OAuth2 authentication strategy for Passport.",
+  "description": "City of Tampere OAuth2 authentication strategy for Passport.",
   "keywords": [
     "passport",
     "oauth",
@@ -16,10 +16,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/City-of-Helsinki/passport-helsinki.git"
+    "url": "https://github.com/Tampere/passport-tampere.git"
   },
   "bugs": {
-    "url": "https://github.com/City-of-Helsinki/passport-helsinki/issues"
+    "url": "https://github.com/Tampere/passport-tampere/issues"
   },
   "licenses": [
     {
